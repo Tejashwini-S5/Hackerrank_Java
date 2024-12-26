@@ -1,0 +1,26 @@
+/* Write a program to print three lines of input :
+-->The first line contains an integer.
+-->The second line contains a double.
+-->The third line contains a String.
+using nextLine(), nextInt(), nextDouble. */
+
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        int integer = scan.nextInt();
+        Double double_no = scan.nextDouble();
+        scan.nextLine();
+        String word = scan.nextLine();
+       
+
+        System.out.println("String: " + word);
+        System.out.println("Double: " + double_no);
+        System.out.println("Int: " + integer);
+        
+        scan.close();
+    }
+}
